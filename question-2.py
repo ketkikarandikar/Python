@@ -1,18 +1,8 @@
-# Write a Python program to find whether a given number is even or odd, print out an #appropriate message to the user ?
+# Write a python program to get the Factorial number of given number ?
 
-
-n1 = int(input("Enter n1 : "))    # input number
-
-# For Odd and Even numbers
-
-if n1==0:
-    print(n1, "is nither even nor odd")    # For neither even nor odd
-
-elif n1%2==0:
-    print(n1,"is even")       # For even numbers will print even 
-
-else:
-    print(n1,"is odd")       # For odd numbers will print odd
-
-
-
+n = int (input ("Enter a number: "))   # input number
+factorial = 1                          # As factorial of zero and 1 is always 1
+if n >= 1:
+    for i in range (1, n+1):             # started from 1 
+        factorial=factorial *i         # multiply the numbers till the given number by user
+print("Factorial of the given number is: ", factorial)
